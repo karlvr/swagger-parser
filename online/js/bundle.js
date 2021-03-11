@@ -4,13 +4,13 @@
 
 const validateSchema = require("./validators/schema");
 const validateSpec = require("./validators/spec");
-const normalizeArgs = require("@apidevtools/json-schema-ref-parser/lib/normalize-args");
+const normalizeArgs = require("@openapi-generator-plus/json-schema-ref-parser/lib/normalize-args");
 const util = require("./util");
 const Options = require("./options");
 const maybe = require("call-me-maybe");
 const { ono } = require("@jsdevtools/ono");
-const $RefParser = require("@apidevtools/json-schema-ref-parser");
-const dereference = require("@apidevtools/json-schema-ref-parser/lib/dereference");
+const $RefParser = require("@openapi-generator-plus/json-schema-ref-parser");
+const dereference = require("@openapi-generator-plus/json-schema-ref-parser/lib/dereference");
 
 module.exports = SwaggerParser;
 
@@ -187,10 +187,10 @@ SwaggerParser.prototype.validate = async function (path, api, options, callback)
  * @typedef {{swagger: string, info: {}, paths: {}}} SwaggerObject
  */
 
-},{"./options":2,"./util":3,"./validators/schema":4,"./validators/spec":5,"@apidevtools/json-schema-ref-parser":8,"@apidevtools/json-schema-ref-parser/lib/dereference":7,"@apidevtools/json-schema-ref-parser/lib/normalize-args":9,"@jsdevtools/ono":32,"call-me-maybe":67}],2:[function(require,module,exports){
+},{"./options":2,"./util":3,"./validators/schema":4,"./validators/spec":5,"@openapi-generator-plus/json-schema-ref-parser":8,"@openapi-generator-plus/json-schema-ref-parser/lib/dereference":7,"@openapi-generator-plus/json-schema-ref-parser/lib/normalize-args":9,"@jsdevtools/ono":32,"call-me-maybe":67}],2:[function(require,module,exports){
 "use strict";
 
-const $RefParserOptions = require("@apidevtools/json-schema-ref-parser/lib/options");
+const $RefParserOptions = require("@openapi-generator-plus/json-schema-ref-parser/lib/options");
 const schemaValidator = require("./validators/schema");
 const specValidator = require("./validators/spec");
 const util = require("util");
@@ -224,7 +224,7 @@ ParserOptions.defaults = {
 
 util.inherits(ParserOptions, $RefParserOptions);
 
-},{"./validators/schema":4,"./validators/spec":5,"@apidevtools/json-schema-ref-parser/lib/options":10,"util":65}],3:[function(require,module,exports){
+},{"./validators/schema":4,"./validators/spec":5,"@openapi-generator-plus/json-schema-ref-parser/lib/options":10,"util":65}],3:[function(require,module,exports){
 "use strict";
 
 const util = require("util");
