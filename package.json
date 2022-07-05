@@ -1,5 +1,5 @@
 {
-  "name": "@apidevtools/swagger-parser",
+  "name": "@openapi-generator-plus/swagger-parser",
   "version": "10.1.0",
   "description": "Swagger 2.0 and OpenAPI 3.0 parser and validator for Node and browsers",
   "keywords": [
@@ -76,7 +76,7 @@
     "typescript": "^4.0.2"
   },
   "dependencies": {
-    "@apidevtools/json-schema-ref-parser": "9.0.6",
+    "@openapi-generator-plus/json-schema-ref-parser": "^9.0.8",
     "@apidevtools/openapi-schemas": "^2.1.0",
     "@apidevtools/swagger-methods": "^3.0.2",
     "@jsdevtools/ono": "^7.1.3",
